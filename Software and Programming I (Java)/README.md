@@ -1,5 +1,7 @@
 Codes developed during study of Software & Programming I
 
+![java_logo](http://xahlee.info/UnixResource_dir/gki/logo_java.png)
+
 
 This module discusses the basic procedural and object-oriented features of the Java programming language. Students  learn how to edit, compile and run small Java programs using the BlueJ integrated development environment.
 
