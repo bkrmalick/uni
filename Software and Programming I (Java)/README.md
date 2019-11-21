@@ -6,6 +6,7 @@ This module discusses the basic procedural and object-oriented features of the J
 
 
 MODULE CONTENT
+
 -Primitive data types and operators in Java
 
 -Branching and looping statements, variable scope
