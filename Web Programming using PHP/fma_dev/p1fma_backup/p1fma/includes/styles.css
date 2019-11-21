@@ -1,0 +1,142 @@
+body, html{
+    margin:0;
+    padding:0;
+}
+
+body{
+	background-color: #91a3c1;
+	min-width:1200px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right li{
+	float:right;
+}
+
+
+.left li{
+	float:left;
+}
+
+
+nav a{
+	display: block;
+	padding: 8px;
+	text-decoration: none;
+	color: black;
+	
+}
+
+#logout-button:link, #logout-button:visited{
+  background-color: grey;
+  color: black;
+  padding: 10px 20px;
+  text-align: center; 
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid black;
+  margin:1%;
+  margin-left:36%;
+}
+
+#logout-button:hover{
+	background-color: lightgrey;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+}
+
+.header img{
+	width: 15%;
+}
+
+.footer{
+	text-align: center;
+	
+}
+
+.main-container{
+	margin-top:0;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 3%;
+	border: 1px solid black;
+	background-color: #FFFFFF;
+ 
+}
+
+h1{
+  clear: right;
+}
+
+nav{
+	margin-bottom:1%;
+	border: 1px solid black;
+	padding-bottom:3%;
+	background-color:#91a3c1; 
+}
+
+.active{
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.footer img{
+	width:5%;
+	
+}
+
+form{
+	width:30%;
+}
+
+form input{
+	float:right;
+}
+
+form label{
+	clear:right;
+	
+}
+
+.login-error{
+	display:block;
+	color:red;
+}
+
+.error{
+	color:red;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 50%;
+	display:table !important;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 5px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+h3 a{
+	text-decoration: none;
+	color: #91a3c1; ;
+}

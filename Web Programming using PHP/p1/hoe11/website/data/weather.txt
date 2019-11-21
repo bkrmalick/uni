@@ -1,0 +1,7 @@
+Monday:Rain
+Tuesday:Cloud
+Wednesday:Drizzle
+Thursday:Snow
+Friday:Snow
+Saturday:Sun
+Sunday:Sun

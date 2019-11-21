@@ -1,0 +1,7 @@
+Monday:Poor
+Tuesday:Poor
+Wednesday:Poor
+Thursday:Poor
+Friday:Average
+Saturday:Good
+Sunday:Excellent

@@ -1,0 +1,4 @@
+Frank:Male:35:Married
+Angelica:Female:31:Single
+Sue:Female:28:Married
+Steve:Male:29:Single
