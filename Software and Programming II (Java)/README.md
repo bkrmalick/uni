@@ -1,5 +1,6 @@
 Codes developed during study of SOFTWARE AND PROGRAMMING II
 
+![java_logo](http://xahlee.info/UnixResource_dir/gki/logo_java.png)
 
 MODULE DESCRIPTION
 
