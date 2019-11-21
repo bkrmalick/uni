@@ -1,0 +1,88 @@
+---
+title: "Lab 2 Solution"
+author: "Abu Bakar Naseer"
+output: html_document
+---
+  
+###Q1
+```{r}
+
+x<-c(10, 2, 15, 6, 4, 9, 12, 11, 3, 0, 12, 10, 9, 7, 11, 10, 8, 5, 10, 6)
+x
+
+length(x) #n 
+
+sort(x)
+
+sum(x) 
+
+mean(x)
+
+median(x)
+
+freq_dx=table(x)
+names(freq_dx)[which(freq_dx==max(freq_dx))] #mode
+
+names(sort(table(x), decreasing=TRUE))[1] #mode2
+
+min(x)
+max(x)
+median(x)
+
+summary(x)
+
+var(x) #unbiased variance 
+
+bvar=sum((x-8)*(x-8))/20 #biased variance 
+
+sqrt(bvar)
+sd(x)
+
+```
+
+
+###Q2
+```{r}
+y=rnorm(10,mean=mean(x),sd=1)
+
+ #cov(x,y) #incompatible dimensions
+ #cor(x,y) #incompatible dimensions
+ 
+y=rnorm(20, mean(x),1)
+x
+y
+cov(x,y)
+cor(x,y)
+
+
+set.seed(63)
+y=rnorm(20, mean(x),1)
+
+cov(x,y)
+cor(x,y)
+
+```
+
+
+###Q3
+
+```{r}
+set.seed(100)
+
+z=rnorm(20, mean=8, sd=1)
+plot(x,z,main="Scatter plot of x and z",xlab="x",ylab="z",ylim=c(-10,40), xlim=c(0,20)) #ylim to "zoom out"
+
+u=rnorm(20,mean=8,sd=10)
+points(x,u,col="blue",pch="*")
+
+```
+
+
+###Q4
+
+```{r}
+boxplot(x,y, col=c("purple","yellow"), names=c("x","y"), main="boxplot x and y")
+
+```
+
+

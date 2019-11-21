@@ -1,0 +1,170 @@
+Time: 3:21 PM
+
+
+Q1) An instance method is instance level meaning that each instance has its own copy of the instance whereas a static method is class-level meaning each instance of the object has the same copy of the method. 
+Additionally, an instance method can only be called on an existing instance of a class whereas, static methods can be called directly on a class even in the absence of an instance. 
+A static method only has access to the static objects of the class unless an instance is passed through the parameter. 
+
+Q2) 
+
+public static String getType(double speed)
+{
+	String s;
+	
+	if(s<=17)
+		s="tropical depression";
+	else if(s<=32)
+		s="tropical storm";
+	else if(s<=42)
+		s="category one hurricane";
+	else
+		s="category two+ hurricane";
+		
+	return s; 
+}
+
+Q4) 
+
+public static double quadAvg(double [] arr)
+{
+	double sum=0; 
+	
+	for(double d: arr)
+			sum+=d*d;
+			
+	return Math.sqrt(sum/arr.length); 
+}
+
+Q6)
+public static String last4(String s)
+{
+	return (s.length() < 4) ? s : s.substring(s.length()-4, s.length()); 
+}
+
+Q7) 
+public static double[] square(double[] a)
+{
+	int[] squares=new int[a.length]; 
+	
+	for(int i=0; i<a.length ; i++)
+		squares[i]=a[i]*a[i]; 
+	
+	return squares;
+}
+
+
+Q8)
+
+public class OysterCard
+{
+	private String number; 
+	private double balance;
+	private int touchInZone; 
+	
+	public OysterCard(String number)
+	{
+		this.number= number;
+	}
+	
+	public String getCardNumber()
+	{
+		return number; 
+	}
+	
+	public double getBalance()
+	{
+		return balance; 
+	}
+	
+	public boolean topUp(double amount)
+	{
+		if(amount<0)
+			return false;
+			
+		balance+=amount;
+		
+		return true;
+	}
+
+	public boolean touch(int zone)
+	{
+		if(touchInZone == 0)
+		{
+			if(balance< 2.10)
+				return false;
+				
+			touchInZone=zone; 
+			return true;
+		}
+		else
+		{
+			if(touchInZone==2 && zone==2)
+				balance-=1.5;
+			else if((touchInZone==1 || touchInZone==2)&& (zone==1 || zone==2))
+				balance-=2.1; 
+		
+			touchInZone=0; 
+			return true; 
+		}
+	}
+
+}
+
+
+Q9)
+(a)
+
+t1.id=1
+T13.s=2
+//t1: 1, 2
+//t2: 2, 3
+
+(b)
+1. String id="23"; 
+2. System.out.println(id); 
+3. String[] args
+
+(c) 
+Interface types define methods but do not provide the implementation whereas classes provide full implementations of the methods. 
+
+Q10) 
+(a)
+
+//a, b, c
+
+fiddle(test, "b")
+{e,bc,c}
+
+//e, bc, c
+
+(b) 
+1. double percentage=2.5;
+2. cannot store double in integer
+3. return type missing
+4. System.out.println("---");
+
+
+(c) [access modifier] [type] [identifier] ; 
+e.g public int x; 
+
+Q11) 
+(a) 
+
+public static int[] concatenate(int[] v, int[] w)
+{
+	int[] vw=new int[v.length+w.length];
+	
+	int count=0;
+	
+	for(int x:v)
+		vw[count++]=x;
+		
+	for(int x:w)
+		vw[count++]=x; 
+	
+	return vw; 
+}
+
+
+
+

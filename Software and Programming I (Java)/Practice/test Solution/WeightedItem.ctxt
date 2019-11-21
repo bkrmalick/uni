@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=WeightedItem
+comment1.params=pricePerKg\ weight
+comment1.target=WeightedItem(double,\ double)
+comment2.params=
+comment2.target=double\ getPrice()
+comment3.params=
+comment3.target=double\ getPricePerKg()
+comment4.params=
+comment4.target=double\ getWeight()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

@@ -1,0 +1,176 @@
+Q2)
+
+public static boolean isLeapYear(int y)
+{
+	if( ((y%4)==0 && (y%100)!=0) || ( (y%100)==0 && (y%400)==0 ) )
+		return true;
+
+	return false; 
+}
+
+
+Q3) 
+
+public static double getEuclideanNorm(double [] vec)
+{
+	int sum=0;
+
+	for(double d: vec)
+		sum+=d*d;
+
+	return Math.sqrt(sum);
+
+}
+
+public static double[] getNormalised(double[] vec)
+{
+	int n=getEuclideanNorm(vec);
+	double[] newVec=new double[vec.length];
+	for(int i=0; i<vec.length ;i++)
+		newVec[i]=vec[i]/n;
+
+	return newVec;
+		
+
+}
+
+Q6)
+
+public static void printWords(String s)
+{
+	for(int i=0; i<s.length() ;i++)
+	{
+		if(s.isWhitespace(s.charAt(i)))
+			System.out.println();
+		else
+			System.out.print(s.charAt(i));
+			
+
+	}
+
+
+
+}
+
+Q7)
+
+public class LoyaltyCard
+{
+	private int numOfCoffees;
+	private double balance;
+	private String number;
+
+
+	public LoyaltyCard(String number)
+	{
+		this.number=number; 
+
+	}
+
+	public String getCardNumber()
+	{
+		return number;
+	}
+
+	public double getBalance()
+	{
+		return balance; 
+	}
+
+	public void collectRewards(double amount, int coffees)
+	{
+		balance+=amount;
+		numOfCoffees+=coffees; 	
+	}
+
+	public boolean isFreeCoffeeAvailable()
+	{
+		return (numOfCoffees > =9); 
+	}
+	
+	public boolean redeemFreeCoffee()
+	{
+		if(!this.isFreeCoffeeAvailable())
+			return false;
+
+
+		numOfCoffees-=9;
+		return true; 
+
+	}
+
+}
+
+
+
+Q8)
+T15.c=2
+t1.b=3
+t1.n=2;
+
+//1: 3, 2, 2
+
+T15.c=3
+t2.b=2
+t2.n=3
+
+//2: 2, 3, 3
+
+
+Q9)
+(a) 
+
+0, 1, 2, 3
+
+//fiddle(v,2)
+//array[2]=array[1] + array[0]
+//array[2]=1+0=1
+//{0,1,1,3}
+
+0, 1, 1, 3
+
+//fiddle(v, 3)
+//array[3]=arra[2] + arra[1]
+//array[3]=2
+
+0, 1, 1, 2
+
+
+(b) 
+1. help constant being changed
+2. args.length
+3. i hasn't been intialized
+4. storing string in boolean type 
+
+
+Q10)
+
+
+(b)	
+
+
+public static int getLongestRunLength(int[] v)
+{
+	int run=1, maxRun=1;
+	int prev=v[0]; 
+	for(int i=1; i<v.length; i++)
+	{	if(v[i] == prev)
+		{
+			run++; 
+			if(run>maxRun)
+			{
+				maxRun=run; 
+			}
+		}
+		else
+		{	
+			run=1; 
+		}
+
+		prev=v[i]; 
+
+	}
+
+
+	return maxRun; 
+}

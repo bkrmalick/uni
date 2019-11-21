@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=test
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=f
+comment2.target=java.lang.String\ getType(int)
+comment3.params=v\ c
+comment3.target=double[]\ multiply(double[],\ double)
+comment4.params=num
+comment4.target=double\ avg(double[])
+comment5.params=s1\ s2
+comment5.target=boolean\ compareLast4(java.lang.String,\ java.lang.String)
+comment6.params=v
+comment6.target=int[]\ reverse(int[])
+numComments=7

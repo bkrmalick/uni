@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ComboLock
+comment1.params=k1\ k2\ k3
+comment1.target=ComboLock(int,\ int,\ int)
+comment2.params=
+comment2.target=void\ reset()
+comment3.params=position
+comment3.target=void\ turnClockwise(int)
+comment4.params=position
+comment4.target=void\ turnCountClockwise(int)
+comment5.params=
+comment5.target=boolean\ open()
+numComments=6

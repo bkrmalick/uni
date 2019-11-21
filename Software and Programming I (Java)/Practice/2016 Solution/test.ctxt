@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=test
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=avg
+comment2.target=void\ printDegreeClassification(int)
+comment3.params=vec
+comment3.target=double\ getMean(double[])
+comment4.params=vec
+comment4.target=double\ getStandardDeviation(double[])
+comment5.params=data\ labels
+comment5.target=void\ printBar(int[],\ java.lang.String[])
+numComments=6

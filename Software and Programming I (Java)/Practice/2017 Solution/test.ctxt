@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=test
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=sched\ est
+comment2.target=void\ printTrainDelay(int,\ int)
+comment3.params=vec
+comment3.target=double\ taxicabNorm(double[])
+comment4.params=vec1\ vec2
+comment4.target=double[]\ difference(double[],\ double[])
+comment5.params=countries\ populations
+comment5.target=void\ printTable(java.lang.String[],\ int[])
+numComments=6

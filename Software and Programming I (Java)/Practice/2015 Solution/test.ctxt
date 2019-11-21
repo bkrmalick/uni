@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=test
+comment1.params=y
+comment1.target=boolean\ isLeapYear(int)
+comment2.params=main
+comment2.target=void\ main(java.lang.String[])
+comment3.params=vec
+comment3.target=double\ getEuclideanNorm(double[])
+comment4.params=vec
+comment4.target=double[]\ getNormalised(double[])
+numComments=5

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=exc2
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=n
+comment2.target=java.lang.String\ convert(int)
+comment3.params=
+comment3.target=int\ scan()
+numComments=4

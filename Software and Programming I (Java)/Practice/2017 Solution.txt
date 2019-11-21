@@ -1,0 +1,232 @@
+Starting Time: 4:32 PM 
+Ending   Time: 6:05 PM
+
+
+Q1) 
+(a) Instance methods are particular to instances of classes, i.e each instance has its own copy and method can only be called on an object instance - whereas a static method is class-level meaning that all objects/instances of a class has one shared copy of the method and the method can be called on the class even if no instance exists. 
+
+(b) By using keyword "final" before the type. 
+	e.g final double PI= 3.142;
+
+(c) Methods Name and it's parameters types. 
+	e.g Avg(int[])
+
+Q2)
+a==b || f&&b > 6-a/b?a:b
+ b>6-a/b?a:b 
+ 3>3?a:b
+ b
+ //3: int
+
+Q3)
+public static void printTrainDelay(int sched, int est)
+{
+	int x=est-sched;
+
+	if(x==0)
+		System.out.println("the train is on time");
+	else if(x==1)
+		System.out.println("the train is delayed by 1 minute");
+	else
+		System.out.println("the train is delayed by "+x+" minutes.");
+
+	if(x>30)
+		System.out.println("claim compensation");
+}
+
+
+Q5)
+
+Q6) 
+(a) 
+
+public static double taxicabNorm(double[] vec)
+{
+	double norm=0;
+
+	for(double value:vec)
+		norm+=(value<0?-value:value);
+
+	return norm;
+
+}
+
+(b)
+
+public static double[] difference(double[] vec1, double[] vec2)
+{
+	double[] vecDiff=new double[vec1.length];
+	for(int i=0; i<vec1.length ; i++)
+		vecDiff[i]=vec1[i]-vec2[i];
+
+	return vecDiff;
+}
+
+
+
+
+Q7)
+public static void printTable(String[] countries, int[] populations)
+{
+	int maxLen=0, maxPopLen=0;
+	
+	for(String s: countries)
+		maxLen=(s.length()>maxLen)?s.length():maxLen;
+	
+	for(int p:populations)
+		maxPopLen=((p+"").length() > maxPopLen)?(p+"").length():maxPopLen;
+
+	for(int i=0;i<populations.length;i++)
+	{
+		System.out.print(countries[i]);
+
+		for(int j=0;j<maxLen-countries[i].length();j++)
+			System.out.print(" ");
+
+		System.out.print(" | ");
+
+		for(int j=0;j<maxPopLen-(populations[i]+"").length();j++)
+			System.out.print(" ");
+
+		System.out.print(populations[i]);
+	}
+
+}
+
+
+Q8)
+1,2,3,4
+//fiddle(v,2)
+//array[2]=array[1]+2=4
+//v={1,2,4,4}
+1,2,4,4
+//fiddle(v,3)
+//array[3]=array[2]+2=4+2=6
+//v={1,2,4,6}
+1,2,4,6
+
+
+Q9)
+
+public class OysterCard
+{
+	private String number;
+	private double balance, dailyCharge;
+	private int LastTouchdate, LastTouchtime; 
+
+	public OysterCard(String number)
+	{
+		this.number=number; 
+
+	}
+
+	public String getCardNumber()
+	{
+		return number;
+	}
+	
+	public double getBalance()
+	{
+		return balance; 
+	}
+
+	public boolean topUp(double amount)
+	{
+		if( amount<0)
+			return false;
+	
+		else
+		{
+			balance+=amount;
+			return true;
+		}
+	
+	}
+
+	public boolean touch(int date, int time)
+	{
+		if(balance<1.5)
+			return false;
+
+		if((time-lastTouchTime)<60 && date==LastTouchDate)
+			return true;
+
+		if(date>LastTouchDate)
+			dailyCharge=0;
+
+		if(dailyCharge>=4.50)
+			return true;
+
+		balance-=1.5;
+		dailyCharge+=1.5;
+
+		lastTouchDate=date;
+		lastTouchTime=time;
+	}
+
+
+}
+
+
+Q10)
+
+t1.b=2
+T17.a=3
+t1.s="T1"
+
+//T1: 2, 3
+
+t2.b=3
+T17.a=5
+t2.s="T2"
+
+//T2: 3, 5
+
+t3.b=5
+T17.a=8
+t3.s="T3"
+
+//T3: 5, 8
+
+
+
+Q11)
+
+(1) static needs to be declared
+(2) constructor has wrong name
+(3) args.length
+(4) i is not a boolean expression
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

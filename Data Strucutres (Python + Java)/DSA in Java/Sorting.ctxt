@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Sorting
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=A
+comment2.target=void\ SelectionSort(int[])
+comment3.params=A\ i
+comment3.target=int\ nextSmallest(int[],\ int)
+comment4.params=A
+comment4.target=void\ insertionSort(int[])
+comment5.params=A\ i
+comment5.target=void\ triggerSwap(int[],\ int)
+comment6.params=A\ start\ end
+comment6.target=int[]\ mergeSort(int[],\ int,\ int)
+comment7.params=A\ B\ sa\ ea\ sb\ eb
+comment7.target=int[]\ merge(int[],\ int[],\ int,\ int,\ int,\ int)
+numComments=8

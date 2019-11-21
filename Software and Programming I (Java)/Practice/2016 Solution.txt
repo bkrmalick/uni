@@ -1,0 +1,199 @@
+Starting Time: 8:28 PM
+Ending   Time: 8:56 PM
+
+
+Q1)
+(a) Each instance of a class has their own individual copy of an instance variable whereas a static variable is shared between all instances of a class i.e static variable is class-level
+
+(b) By using keyword "final" before the type of the object
+	e.g final double PI=3.142;
+
+(c) An interface type object can store references to objects of all classes that implement that interface whereas a class type object can store references to objects of that class or any of its subclasses. An important distinguishment is the fact that an interface type object can never be instantiated whereas a class type object can be.  
+
+
+Q2) 
+true : boolean
+
+Q3) 
+public void printDegreeClassification(Student s)
+{
+	int avg=s.getAverage();
+	String class;
+	
+	if(avg>=70)
+		class="First";
+	else if(avg>=60)
+		class="Upper Second";
+	else if(avg>=50)
+		class="Lower Second";
+	else if(avg>=40)
+		class="Third";
+	else if(avg>=30)
+		class="Pass";
+	else
+		class="Fail";
+
+	System.out.println(class);
+}
+
+Q4)
+Q5)
+
+Q6)
+(a)
+public static double getMean(double[] vec)
+{
+	double sum=0;
+
+	for(double d: vec)
+		sum+=d;
+	return sum/vec.length;
+}
+
+(b)
+
+public static double getStandardDeviation(double[] vec)
+{
+	double a=getMean(vec);
+
+	double sum=0;
+
+	for(double d:vec)
+		sum+=(d-a)*(d-a);
+
+	return Math.sqrt(sum/vec.length);
+}
+
+Q7)
+
+public static void printBar(int[] data, String[] labels)
+{
+	int maxLabelLen=0;
+	int maxData=-1;
+
+	for(int i:data)
+		maxData=(i>maxData)?i:maxData;
+
+	for(String s:labels)
+		maxLabelLen=(s.length() > maxLabelLen)?s.length():maxLabelLen;
+	
+	for(int i=0;i<labels.length;i++)
+	{
+		for(int j=0;j<(maxLabelLen-labels[i].length());j++)
+			System.out.print(" ");
+
+		System.out.print(labels[i]+" ");
+
+		int nStr=(data[i]/maxData)*40;
+
+		for(int j=0;j<nStr;j++)
+			System.out.print("*");
+
+		System.out.println("");
+
+
+	}
+
+
+}
+
+Q8) 
+public class FrequentFlyer
+{
+	private double points, pointsInYear;
+	private int accountNumber, tier;
+	
+	public FrequentFlyer(int accountNo)
+	{
+		this.accountNo = accountNo;	
+
+	}
+
+	public int getAccountNumber()
+	{
+		return accountNumber; 
+	}
+	
+	public int getTier()
+	{
+		return tier;
+	}
+
+	public double getBalance()
+	{
+		return points;
+	}
+
+	public void addFlight(int miles)
+	{
+		points=miles*(tier==1?1.25:1);	
+		pointsInYear+=miles*(tier==1?1.25:1);	
+
+	}
+
+	public void endOfYear()
+	{
+		if(pointsInYear>10000)
+		{
+			tier=1;
+			pointsInYear=0;
+		}
+	}	
+
+
+	public boolean redeemPoints(int points)
+	{
+		if(this.points>=points)
+		{	
+			this.points-=points;
+			return true;
+		}
+		return false;
+	}
+
+}
+
+Q9) 
+t1.b=0
+T16.a=1
+t1.s="0: 1"
+
+//0: 1, 0, 1
+
+t2.b=1
+T16.a=3
+t2.s="0: 2"
+
+//0: 2, 1, 3
+
+t3.b=3
+T16.a=6
+t3.s="0: 3"
+
+//0: 3, 3, 6
+
+
+Q11)
+1,2,3,4
+//fiddle(v,2)
+//array[2]=array[1]*2=4
+1,2,4,4
+//fiddle(v, 3)
+//array[3]=array[2]*2
+1,2,4,8
+
+
+
+
+
+
+
+
+Q10)
+
+(1) found hasn't been intialized 
+(2) double 1.0 in int type
+(3) args.length (lowercase)
+(4) "HELP" +(i-1)
+
+

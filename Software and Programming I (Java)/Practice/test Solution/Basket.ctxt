@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Basket
+comment1.params=
+comment1.target=Basket()
+comment2.params=item
+comment2.target=void\ addItem(Item)
+comment3.params=
+comment3.target=int\ getCount()
+comment4.params=
+comment4.target=double\ getTotal()
+comment5.params=
+comment5.target=void\ printBasket()
+numComments=6

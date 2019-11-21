@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=test
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=word
+comment2.target=void\ printSubstrings(java.lang.String)
+comment3.params=factor\ vector
+comment3.target=double[]\ multiply(double,\ double[])
+comment4.params=grade
+comment4.target=int\ getUcasTariff(java.lang.String)
+comment5.params=grades
+comment5.target=int\ getTotalUcasTariff(java.lang.String[])
+numComments=6

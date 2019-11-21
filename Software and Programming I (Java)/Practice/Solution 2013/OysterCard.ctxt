@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=OysterCard
+comment1.params=number
+comment1.target=OysterCard(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getCardNumber()
+comment3.params=
+comment3.target=double\ getBalance()
+comment4.params=amount
+comment4.target=boolean\ topUp(double)
+comment5.params=zone
+comment5.target=boolean\ touch(int)
+numComments=6

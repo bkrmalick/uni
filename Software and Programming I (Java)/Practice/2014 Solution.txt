@@ -1,0 +1,197 @@
+Start Time: 12:37 PM
+End Time: 1:48 PM 
+
+
+Q1) An instance variable is specific to each instance of the class, meaning that each instance of the class has it's own copy of the variable whereas a static variable is shared at class level meaning all objects/instances share the same copy of the variable.
+
+Q2) 
+
+public static String getType(int f)
+{
+	String s; 
+
+	if(f>30 && f<=300)
+		s="long wave AM";
+	else if(f>300 && f<=3000)
+		s="medium-wave AM";
+	else if(f>3000 && f<=30000)
+		s="short-wave AM";
+	else if(f>30000 && f<=300000)
+		s="FM";
+	else
+		s="unknown";
+
+	return s;		
+
+}
+
+Q3) 
+
+public static double avg(double[] num)
+{
+	double sum=0; 
+	for(double n: num)
+	{
+		sum+=n;		
+	}
+
+
+	return sum/num.length;
+}
+
+Q6) 
+
+public static boolean compareLast4(String s1, String s2)
+{
+	if(s1.length() <4 || s2.length()<4)
+		return false;
+
+
+	return (  s1.substring(s1.length()-4, s1.length()) == s2.substring(s2.length()-				4,s2.length()));	
+}
+
+
+
+
+Q7) 
+public static double[] multiply(double[] v, double c)
+{
+	double[] v2=new double[v.length];
+
+	int count=0;
+
+	for(double d: v)
+	{
+		v2[count]=v[count++]*c; 
+	}
+	
+	return v2; 
+}
+
+
+Q8) 
+
+public class LoyaltyCard
+{
+	private String number;
+	private double balance;
+
+	public LoyaltyCard(String number)
+	{
+		this.number=number;
+	}
+
+	public String getCardNumber()
+	{
+		return number;
+	}
+
+
+	public double getBalance()
+	{
+		return balance;
+	}
+
+
+	public void collect(double amount, int bags)
+	{
+		balance+=2*amount + bags;
+
+	}
+
+	public double redeem(int points)
+	{
+		if(points<500 || points>balance) //(double) points
+			return 0;
+
+		balance-=points;
+		
+		return 0.01*points/2.0; 
+	}
+}
+
+
+Q9)
+(a) 
+
+t1.j=3
+T14.s=1
+t1.i=1
+
+//t1: 1, 3, 1
+
+t2.j=2
+T14.s=2
+t2.i=2
+
+//t2: 2, 2, 2
+
+
+
+(b)
+
+1. "23".length() 
+2. id/2
+3. //
+
+(c)
+
+Name and the parameter types of a method
+
+
+Q10) 
+(a)
+
+mary, henry, rose
+
+//fiddle(v, "mary");
+// {alfie, henry, rosemarie}
+
+mary, henry, rosemarie
+
+(b)
+
+1. dimension = (double) args[0];
+2. dimension * dimension
+3. "The area is" + area
+4. return type double
+
+(c) by using keyword "final" before the type of the variable
+
+
+Q11)
+
+(b)
+
+
+public static void reverse(int[] v)
+{
+	int a; 
+
+	for(int i=0; i<v.length ; i++)
+	{
+		a=v[i];
+
+		v[i]=v[i-v.length-1];
+
+		v[i-v.length-1] = a; 
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
