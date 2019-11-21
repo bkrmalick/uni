@@ -9,4 +9,4 @@ practice - different files used for practicing purposes
 
 
 
-Links to more Projects: http://titan.dcs.bbk.ac.uk/~anasee01/
+Links to more web projects: http://titan.dcs.bbk.ac.uk/~anasee01/
